@@ -6,6 +6,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var addButton: UIButton!
     
     var image: UIImage? = nil {
         didSet {
@@ -20,14 +21,27 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         BingBackgroundImageProvider.getImage(completionHandler: { backgroundImage in
             DispatchQueue.main.async {
-                self.image = backgroundImage
-                self.addBlurEffect()
+                if let _ = backgroundImage {
+                    self.image = backgroundImage
+                    self.addBlurEffect()
+                    self.addButton.isHidden = false
+                } else {
+                    self.manageNoImageFound()
+                }
             }
         })
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         addBlurEffect(size: size)
+    }
+    
+    private func manageNoImageFound() {
+        let alertController = UIAlertController(title: "Oopsie doopsie", message: "No image found", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alertController, animated: true, completion: nil)
+        
+        
     }
     
     private func addBlurEffect(size: CGSize? = nil) {
