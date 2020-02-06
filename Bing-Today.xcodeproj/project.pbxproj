@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		333ABD0223ECAA9400F94BC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ABD0123ECAA9400F94BC9 /* AppDelegate.swift */; };
-		333ABD0423ECAA9400F94BC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ABD0323ECAA9400F94BC9 /* SceneDelegate.swift */; };
 		333ABD0623ECAA9400F94BC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ABD0523ECAA9400F94BC9 /* ViewController.swift */; };
 		333ABD0923ECAA9400F94BC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333ABD0723ECAA9400F94BC9 /* Main.storyboard */; };
 		333ABD0B23ECAA9600F94BC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333ABD0A23ECAA9600F94BC9 /* Assets.xcassets */; };
-		333ABD0E23ECAA9600F94BC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333ABD0C23ECAA9600F94BC9 /* LaunchScreen.storyboard */; };
+		333ABD1923ECAB3000F94BC9 /* BingBackgroundImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ABD1823ECAB3000F94BC9 /* BingBackgroundImageProvider.swift */; };
+		333ABD2123ECAC8C00F94BC9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 333ABD2023ECAC8C00F94BC9 /* Podfile */; };
+		338F57E423ECB6C7006B7A51 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338F57E323ECB6C7006B7A51 /* Launch Screen.storyboard */; };
+		A71E3479489B479CD3B56B7B /* Pods_Bing_Today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8384330901BC63A09B9B2101 /* Pods_Bing_Today.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		098344C79095B99B6894173C /* Pods-Bing-Today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bing-Today.debug.xcconfig"; path = "Target Support Files/Pods-Bing-Today/Pods-Bing-Today.debug.xcconfig"; sourceTree = "<group>"; };
 		333ABCFE23ECAA9400F94BC9 /* Bing-Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bing-Today.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		333ABD0123ECAA9400F94BC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		333ABD0323ECAA9400F94BC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		333ABD0523ECAA9400F94BC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		333ABD0823ECAA9400F94BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		333ABD0A23ECAA9600F94BC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		333ABD0D23ECAA9600F94BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		333ABD0F23ECAA9600F94BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		333ABD1823ECAB3000F94BC9 /* BingBackgroundImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BingBackgroundImageProvider.swift; sourceTree = "<group>"; };
+		333ABD2023ECAC8C00F94BC9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		338F57E323ECB6C7006B7A51 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8384330901BC63A09B9B2101 /* Pods_Bing_Today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bing_Today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF177C81011F987C0515B01F /* Pods-Bing-Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bing-Today.release.xcconfig"; path = "Target Support Files/Pods-Bing-Today/Pods-Bing-Today.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71E3479489B479CD3B56B7B /* Pods_Bing_Today.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +47,11 @@
 		333ABCF523ECAA9400F94BC9 = {
 			isa = PBXGroup;
 			children = (
+				333ABD2023ECAC8C00F94BC9 /* Podfile */,
 				333ABD0023ECAA9400F94BC9 /* Bing-Today */,
 				333ABCFF23ECAA9400F94BC9 /* Products */,
+				616D5BF8112278B74E8E02D0 /* Pods */,
+				56BFB4B90E7E1C1449DD66D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +66,40 @@
 		333ABD0023ECAA9400F94BC9 /* Bing-Today */ = {
 			isa = PBXGroup;
 			children = (
+				333ABD1723ECAB3000F94BC9 /* Utils */,
 				333ABD0123ECAA9400F94BC9 /* AppDelegate.swift */,
-				333ABD0323ECAA9400F94BC9 /* SceneDelegate.swift */,
 				333ABD0523ECAA9400F94BC9 /* ViewController.swift */,
 				333ABD0723ECAA9400F94BC9 /* Main.storyboard */,
 				333ABD0A23ECAA9600F94BC9 /* Assets.xcassets */,
-				333ABD0C23ECAA9600F94BC9 /* LaunchScreen.storyboard */,
 				333ABD0F23ECAA9600F94BC9 /* Info.plist */,
+				338F57E323ECB6C7006B7A51 /* Launch Screen.storyboard */,
 			);
 			path = "Bing-Today";
+			sourceTree = "<group>";
+		};
+		333ABD1723ECAB3000F94BC9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				333ABD1823ECAB3000F94BC9 /* BingBackgroundImageProvider.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		56BFB4B90E7E1C1449DD66D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8384330901BC63A09B9B2101 /* Pods_Bing_Today.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		616D5BF8112278B74E8E02D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				098344C79095B99B6894173C /* Pods-Bing-Today.debug.xcconfig */,
+				CF177C81011F987C0515B01F /* Pods-Bing-Today.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 333ABD1223ECAA9600F94BC9 /* Build configuration list for PBXNativeTarget "Bing-Today" */;
 			buildPhases = (
+				1DEECBB981BE10DE26B5A858 /* [CP] Check Pods Manifest.lock */,
 				333ABCFA23ECAA9400F94BC9 /* Sources */,
 				333ABCFB23ECAA9400F94BC9 /* Frameworks */,
 				333ABCFC23ECAA9400F94BC9 /* Resources */,
+				8CEED70CA915BFDBAE05A5CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,13 +162,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				333ABD0E23ECAA9600F94BC9 /* LaunchScreen.storyboard in Resources */,
 				333ABD0B23ECAA9600F94BC9 /* Assets.xcassets in Resources */,
+				333ABD2123ECAC8C00F94BC9 /* Podfile in Resources */,
+				338F57E423ECB6C7006B7A51 /* Launch Screen.storyboard in Resources */,
 				333ABD0923ECAA9400F94BC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DEECBB981BE10DE26B5A858 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bing-Today-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CEED70CA915BFDBAE05A5CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bing-Today/Pods-Bing-Today-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bing-Today/Pods-Bing-Today-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		333ABCFA23ECAA9400F94BC9 /* Sources */ = {
@@ -140,7 +225,7 @@
 			files = (
 				333ABD0623ECAA9400F94BC9 /* ViewController.swift in Sources */,
 				333ABD0223ECAA9400F94BC9 /* AppDelegate.swift in Sources */,
-				333ABD0423ECAA9400F94BC9 /* SceneDelegate.swift in Sources */,
+				333ABD1923ECAB3000F94BC9 /* BingBackgroundImageProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,14 +238,6 @@
 				333ABD0823ECAA9400F94BC9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		333ABD0C23ECAA9600F94BC9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				333ABD0D23ECAA9600F94BC9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,6 +359,7 @@
 		};
 		333ABD1323ECAA9600F94BC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098344C79095B99B6894173C /* Pods-Bing-Today.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +378,7 @@
 		};
 		333ABD1423ECAA9600F94BC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF177C81011F987C0515B01F /* Pods-Bing-Today.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
