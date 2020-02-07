@@ -14,6 +14,9 @@
 		333ABD1923ECAB3000F94BC9 /* BingBackgroundImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ABD1823ECAB3000F94BC9 /* BingBackgroundImageProvider.swift */; };
 		333ABD2123ECAC8C00F94BC9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 333ABD2023ECAC8C00F94BC9 /* Podfile */; };
 		338F57E423ECB6C7006B7A51 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338F57E323ECB6C7006B7A51 /* Launch Screen.storyboard */; };
+		33FEC09623EDFBB3003D406D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33FEC09523EDFBB3003D406D /* Localizable.strings */; };
+		33FEC09923EE0111003D406D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEC09823EE0111003D406D /* String+Extensions.swift */; };
+		33FEC09B23EE058F003D406D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEC09A23EE058F003D406D /* UIViewController+Extensions.swift */; };
 		A71E3479489B479CD3B56B7B /* Pods_Bing_Today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8384330901BC63A09B9B2101 /* Pods_Bing_Today.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		333ABD1823ECAB3000F94BC9 /* BingBackgroundImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BingBackgroundImageProvider.swift; sourceTree = "<group>"; };
 		333ABD2023ECAC8C00F94BC9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		338F57E323ECB6C7006B7A51 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		33FEC09523EDFBB3003D406D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		33FEC09823EE0111003D406D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		33FEC09A23EE058F003D406D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		8384330901BC63A09B9B2101 /* Pods_Bing_Today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bing_Today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF177C81011F987C0515B01F /* Pods-Bing-Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bing-Today.release.xcconfig"; path = "Target Support Files/Pods-Bing-Today/Pods-Bing-Today.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,13 +72,14 @@
 		333ABD0023ECAA9400F94BC9 /* Bing-Today */ = {
 			isa = PBXGroup;
 			children = (
+				33FEC09723EE00FC003D406D /* Extensions */,
 				333ABD1723ECAB3000F94BC9 /* Utils */,
+				33FEC09323EDFAE3003D406D /* Main Module */,
 				333ABD0123ECAA9400F94BC9 /* AppDelegate.swift */,
-				333ABD0523ECAA9400F94BC9 /* ViewController.swift */,
-				333ABD0723ECAA9400F94BC9 /* Main.storyboard */,
 				333ABD0A23ECAA9600F94BC9 /* Assets.xcassets */,
 				333ABD0F23ECAA9600F94BC9 /* Info.plist */,
 				338F57E323ECB6C7006B7A51 /* Launch Screen.storyboard */,
+				33FEC09523EDFBB3003D406D /* Localizable.strings */,
 			);
 			path = "Bing-Today";
 			sourceTree = "<group>";
@@ -83,6 +90,24 @@
 				333ABD1823ECAB3000F94BC9 /* BingBackgroundImageProvider.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		33FEC09323EDFAE3003D406D /* Main Module */ = {
+			isa = PBXGroup;
+			children = (
+				333ABD0523ECAA9400F94BC9 /* ViewController.swift */,
+				333ABD0723ECAA9400F94BC9 /* Main.storyboard */,
+			);
+			path = "Main Module";
+			sourceTree = "<group>";
+		};
+		33FEC09723EE00FC003D406D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				33FEC09823EE0111003D406D /* String+Extensions.swift */,
+				33FEC09A23EE058F003D406D /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		56BFB4B90E7E1C1449DD66D3 /* Frameworks */ = {
@@ -162,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FEC09623EDFBB3003D406D /* Localizable.strings in Resources */,
 				333ABD0B23ECAA9600F94BC9 /* Assets.xcassets in Resources */,
 				333ABD2123ECAC8C00F94BC9 /* Podfile in Resources */,
 				338F57E423ECB6C7006B7A51 /* Launch Screen.storyboard in Resources */,
@@ -223,6 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FEC09923EE0111003D406D /* String+Extensions.swift in Sources */,
+				33FEC09B23EE058F003D406D /* UIViewController+Extensions.swift in Sources */,
 				333ABD0623ECAA9400F94BC9 /* ViewController.swift in Sources */,
 				333ABD0223ECAA9400F94BC9 /* AppDelegate.swift in Sources */,
 				333ABD1923ECAB3000F94BC9 /* BingBackgroundImageProvider.swift in Sources */,
