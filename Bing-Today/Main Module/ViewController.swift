@@ -12,7 +12,7 @@ class ViewController: UIViewController {
         didSet {
             if let image = image {
                 self.imageView.image = image
-                self.backgroundImageView.image = image
+                self.backgroundImageView.image = image.applyBlurEffect()
             }
         }
     }
@@ -24,9 +24,8 @@ class ViewController: UIViewController {
         
         BingBackgroundImageProvider.getImage(completionHandler: { backgroundImage in
             DispatchQueue.main.async {
-                if let _ = backgroundImage {
+                if let backgroundImage = backgroundImage {
                     self.image = backgroundImage
-                    self.addBlurEffect()
                     self.addButton.isHidden = false
                 } else {
                     self.noImageFound()
@@ -36,30 +35,10 @@ class ViewController: UIViewController {
         })
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        addBlurEffect(size: size)
-    }
-    
     private func noImageFound() {
         let alertController = UIAlertController(title: "error_title".localized, message: "no_image_error_message".localized, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)
-    }
-    
-    private func addBlurEffect(size: CGSize? = nil) {
-        backgroundImageView.subviews.forEach { view in
-            view.removeFromSuperview()
-        }
-        
-        let blurEffect = UIBlurEffect(style: .light)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        
-        if let size = size {
-            blurEffectView.frame = CGRect(origin: .zero, size: size)
-        } else {
-            blurEffectView.frame = backgroundImageView!.bounds
-        }
-        backgroundImageView.addSubview(blurEffectView)
     }
     
     @IBAction func addToGallery() {
@@ -79,5 +58,4 @@ class ViewController: UIViewController {
             present(alertController, animated: true, completion: nil)
         }
     }
-    
 }

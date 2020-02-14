@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3300203123F727F200C0D2D0 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300203023F727F200C0D2D0 /* UIImage+Extensions.swift */; };
 		333ABD0223ECAA9400F94BC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ABD0123ECAA9400F94BC9 /* AppDelegate.swift */; };
 		333ABD0623ECAA9400F94BC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ABD0523ECAA9400F94BC9 /* ViewController.swift */; };
 		333ABD0923ECAA9400F94BC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333ABD0723ECAA9400F94BC9 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		098344C79095B99B6894173C /* Pods-Bing-Today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bing-Today.debug.xcconfig"; path = "Target Support Files/Pods-Bing-Today/Pods-Bing-Today.debug.xcconfig"; sourceTree = "<group>"; };
+		3300203023F727F200C0D2D0 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		333ABCFE23ECAA9400F94BC9 /* Bing-Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bing-Today.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		333ABD0123ECAA9400F94BC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		333ABD0523ECAA9400F94BC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				33FEC09823EE0111003D406D /* String+Extensions.swift */,
 				33FEC09A23EE058F003D406D /* UIViewController+Extensions.swift */,
+				3300203023F727F200C0D2D0 /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				33FEC09923EE0111003D406D /* String+Extensions.swift in Sources */,
 				33FEC09B23EE058F003D406D /* UIViewController+Extensions.swift in Sources */,
 				333ABD0623ECAA9400F94BC9 /* ViewController.swift in Sources */,
+				3300203123F727F200C0D2D0 /* UIImage+Extensions.swift in Sources */,
 				333ABD0223ECAA9400F94BC9 /* AppDelegate.swift in Sources */,
 				333ABD1923ECAB3000F94BC9 /* BingBackgroundImageProvider.swift in Sources */,
 			);
